@@ -1,0 +1,2 @@
+start out\html\index.html
+npm run dendrynexus make-html -- --pretty
