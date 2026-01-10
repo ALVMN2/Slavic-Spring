@@ -231,7 +231,7 @@ Q.unemployed_qol = 100;
 Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
-Q.classes = ['youth', 'early middle age', 'late middle age', 'seniors', 'unemployed', 'catholics','minorities'];
+Q.classes = ['youth', 'millenials', 'genx', 'seniors', 'unemployed','catholics','minorities'];
 Q.parties = ['smer', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // TODO: add 'sapd' later on
