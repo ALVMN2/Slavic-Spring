@@ -580,7 +580,7 @@ Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
 Q.radbruch_advisor = 0; // Gustav Radbruch
 Q.stampfer_advisor = 0; // Friedrich Stampfer
 !}
-set-bg: img/map_2.jpg
+set-bg: img/nycbgjpg
 new-page: true
 
 > *"After every summer, autumn and finally winter arrive in nature, and this sequence also appears in world history. Nations exhausted by heat and work gradually leave the stage of history, followed by a historical interlude, a spiritual winter that ends one life... Nevertheless, the development of humanity continues, eternal truths do not collapse, on the contrary: just as nature awakens to rich life with the arrival of spring after winter and begins with renewed strength, so it is in the life of humanity."*
