@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta prefix="ifiction: http://babel.ifarchive.org/protocol/iFiction/"
-        property="ifiction:ifid" content="7FCDF039-2B77-4179-B795-CBAFA65253AA">
+    <meta prefix="ifiction: http://babel.ifarchive.org/protocol/iFiction/" property="ifiction:ifid"
+        content="7FCDF039-2B77-4179-B795-CBAFA65253AA">
     <title>Social Democracy: An Alternate History - Autumn Chen</title>
     <link rel="stylesheet" type="text/css" href="game.css">
     <script src="jquery-1.11.1.min.js"></script>
@@ -13,12 +14,13 @@
     <script src="d3-linegraph.js"></script>
     <script src="core.js"></script>
     <script src="game.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="background" id="bg2">
     </div>
 
-    <div class="background" id="bg1" style='display: block; background-image: url("img/map_2.jpg");'>
+    <div class="background" id="bg1" style='display: block; background-image: url("img/nycbg.jpg");'>
     </div>
 
     <div id="options" class="overlay options" style="display: none;">
@@ -32,17 +34,21 @@
                         <label for="backgrounds_yes">On</label>
                     </td>
                     <td>
-                        <input type="radio" id="backgrounds_yes" name="backgrounds" value="1" onclick="window.enableBg();">
+                        <input type="radio" id="backgrounds_yes" name="backgrounds" value="1"
+                            onclick="window.enableBg();">
                     </td>
                     <td>
                         <label for="backgrounds_no">Off</label>
                     </td>
                     <td>
-                        <input type="radio" id="backgrounds_no" name="backgrounds" value="0" onclick="window.disableBg();">
+                        <input type="radio" id="backgrounds_no" name="backgrounds" value="0"
+                            onclick="window.disableBg();">
                     </td>
                 </tr>
                 <tr>
-                    <td> <hr> </td>
+                    <td>
+                        <hr>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -61,9 +67,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td> <hr> </td>
+                    <td>
+                        <hr>
+                    </td>
                 </tr>
- 
+
                 <tr>
                     <td>
                         Animations:
@@ -82,7 +90,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td> <hr> </td>
+                    <td>
+                        <hr>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -102,7 +112,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td> <hr> </td>
+                    <td>
+                        <hr>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -112,7 +124,8 @@
                         <label for="light_mode">Light mode</label>
                     </td>
                     <td>
-                        <input type="radio" id="light_mode" name="ld_mode" value="1" onclick="window.enableLightMode();">
+                        <input type="radio" id="light_mode" name="ld_mode" value="1"
+                            onclick="window.enableLightMode();">
                     </td>
                     <td>
                         <label for="dark_mode">Dark mode</label>
@@ -129,7 +142,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                   <td>
+                    <td>
                         <button onclick="window.showMods();">Mods</button>
                     </td>
 
@@ -166,7 +179,7 @@
                     <button class="b export_button" id="export_button_a1">Export</button>
                 </td>
             </tr>
-            
+
             <tr>
                 <td>0</td>
                 <td>
@@ -273,9 +286,10 @@
             </tr>
             <tr>
                 <td colspan="5">
-                    <label for="import_save">Import save file:</label> <input type="file" id="import_save" onchange="dendryUI.importSave('import_save');"></input>
+                    <label for="import_save">Import save file:</label> <input type="file" id="import_save"
+                        onchange="dendryUI.importSave('import_save');"></input>
                 </td>
-            </tr> 
+            </tr>
             <tr>
                 <td>
                     <button onclick="dendryUI.hideSaveSlots();">Close</button>
@@ -308,10 +322,14 @@
             <div id="tools_wrapper">
                 <div id='stats_sidebar' class='tools left'>
                     <div class="tab_container">
-                        <button class="tab_button active" id="main_tab" onclick="window.changeTab('status', 'main_tab');">Main</button>
-                        <button class="tab_button" id="politics_tab" onclick="window.changeTab('status.politics', 'politics_tab');">Politics</button>
-                        <button class="tab_button" id="paramilitary_tab" onclick="window.changeTab('status.paramilitaries', 'paramilitary_tab');">Defense</button>
-                        <button class="tab_button" id="poll_tab" onclick="window.changeTab('status.polls', 'poll_tab');">Polls</button>
+                        <button class="tab_button active" id="main_tab"
+                            onclick="window.changeTab('status', 'main_tab');">Main</button>
+                        <button class="tab_button" id="politics_tab"
+                            onclick="window.changeTab('status.politics', 'politics_tab');">Politics</button>
+                        <button class="tab_button" id="paramilitary_tab"
+                            onclick="window.changeTab('status.paramilitaries', 'paramilitary_tab');">Defense</button>
+                        <button class="tab_button" id="poll_tab"
+                            onclick="window.changeTab('status.polls', 'poll_tab');">Polls</button>
                     </div>
                     <div id="qualities">
                     </div>
@@ -323,7 +341,7 @@
             </div>
 
             <footer>
-      <!--
+                <!--
       <p>
         <a onclick="window.showSaveSlots();" href="#">Save/Load</a>
         <a onclick="window.quickSave();" href="#">Quick Save</a>
@@ -336,5 +354,6 @@
             </footer>
         </div>
     </div>
-  </body>
+</body>
+
 </html>
