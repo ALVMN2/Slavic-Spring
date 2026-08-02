@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Klima Italic";
+    src: url("fonts/klima-italic-web.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Klima Light";
+    src: url("fonts/klima-light-italic-web (1).woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
 body {
   --bg-color: #f3f3e3;
   --border-color: #000;
@@ -12,7 +24,7 @@ body {
   --tab-hover-color: #ececec;
   --card-border-color: #ccc; 
   --card-bg-color: #ddd; 
-  font-family: "Minion Pro", Georgia, serif;
+  font-family: "Klima Italic", Georgia, serif;
   background-color: var(--bg-color);
   padding: 0;
   line-height: 155%;
@@ -53,6 +65,7 @@ header, #content, footer {
   font-size: 1.1em;
   padding: 1em 1.5em 1.5em 1.5em;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 footer {
   margin-top: 1em;
@@ -183,6 +196,7 @@ blockquote + blockquote.attribution {
   left: 0;
   right: 0;
   margin: 0 auto;
+  
 }
 .tools {
   padding: 0.6em;
@@ -190,10 +204,12 @@ blockquote + blockquote.attribution {
   color: var(--text-color);
   background-color: var(--content-bg-color);
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 .tools.left {
   float: left;
   left: 0.4em;
+  
 }
 .tools.right {
   float: right;
@@ -228,7 +244,7 @@ blockquote + blockquote.attribution {
     margin-right: -0.6em;
 }
 .tab_button {
-    font-family: "Minion Pro", Georgia, serif;
+    font-family: "Klima Light", Georgia, serif;
     background-color: var(--tab-color);
     color: var(--text-color);
     /*float: left;*/

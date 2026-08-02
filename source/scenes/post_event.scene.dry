@@ -250,9 +250,9 @@ if (Q.month_actions >= 1) {
                 Q.economic_expansion += Q.economic_growth;
             }
         }
-        if (Q.economic_growth > 0 && Q.reparations <= -2 && Q.smer_in_government) {
+        if (Q.economic_growth > 0 && Q.reparations <= -2 && Q.DSA_in_government) {
             Q.economic_expansion += Q.economic_growth;
-        } else if (Q.economic_growth > 0 && Q.smer_in_government) {
+        } else if (Q.economic_growth > 0 && Q.DSA_in_government) {
             Q.economic_expansion += Q.economic_growth/2;
         }
         /////////////////////////////// update opinions based on economy
@@ -267,28 +267,28 @@ if (Q.month_actions >= 1) {
         }
 
         ///////////////////////////// change party support based on pro_republic
-        // if pro_republic is less than the support of the Weimar coalition, reduce smer support...
-        if (Q.pro_republic < (Q.smer_votes + Q.ddp_votes + Q.z_votes - 3)) {
-            if (Q.new_middle_smer > 0) {
-                Q.new_middle_smer -= 5/12;
+        // if pro_republic is less than the support of the Weimar coalition, reduce DSA support...
+        if (Q.pro_republic < (Q.DSA_votes + Q.ddp_votes + Q.z_votes - 3)) {
+            if (Q.new_middle_DSA > 0) {
+                Q.new_middle_DSA -= 5/12;
                 Q.new_middle_nsdap += 3/12;
             }
-            if (Q.old_middle_smer > 0) {
-                Q.old_middle_smer -= 5/12;
+            if (Q.old_middle_DSA > 0) {
+                Q.old_middle_DSA -= 5/12;
                 Q.old_middle_nsdap += 3/12;
             }
-            if (Q.rural_smer > 0) {
-                Q.rural_smer -= 5/12;
+            if (Q.rural_DSA > 0) {
+                Q.rural_DSA -= 5/12;
                 Q.rural_nsdap += 3/12;
             }
-            if (Q.workers_smer_normalized > 30) {
-                Q.workers_smer -= 4/12;
+            if (Q.workers_DSA_normalized > 30) {
+                Q.workers_DSA -= 4/12;
             }
-            if (Q.catholics_smer > 0) {
-                Q.catholics_smer -= 4/12;
+            if (Q.catholics_DSA > 0) {
+                Q.catholics_DSA -= 4/12;
             }
-            if (Q.unemployed_smer_normalized > 10) {
-                Q.unemployed_smer -= 4/12;
+            if (Q.unemployed_DSA_normalized > 10) {
+                Q.unemployed_DSA -= 4/12;
             }
             if (Q.new_middle_ddp > 0) {
                 Q.new_middle_ddp -= 4/12;
@@ -444,30 +444,30 @@ if (Q.month_actions >= 1) {
                 Q.unemployed_nsdap += 2/12;
                 Q.old_middle_nsdap += 2/12;
                 Q.new_middle_nsdap += 2/12;
-                if (Q.smer_in_government) {
-                    Q.workers_smer -= 4/12;
+                if (Q.DSA_in_government) {
+                    Q.workers_DSA -= 4/12;
                 }
             }
         }
         // prevent forever support if the economy is bad
-        if (Q.year >= 1934 && (Q.inflation >= 8 || Q.unemployed >= 20) && Q.pro_republic <= 45 && Q.smer_in_government) {
-            if (Q.workers_smer_normalized > 40) {
-                Q.workers_smer -= 6/12;
+        if (Q.year >= 1934 && (Q.inflation >= 8 || Q.unemployed >= 20) && Q.pro_republic <= 45 && Q.DSA_in_government) {
+            if (Q.workers_DSA_normalized > 40) {
+                Q.workers_DSA -= 6/12;
             }
-            if (Q.unemployed_smer_normalized > 20) {
-                Q.unemployed_smer -= 6/12;
+            if (Q.unemployed_DSA_normalized > 20) {
+                Q.unemployed_DSA -= 6/12;
             }
-            if (Q.new_middle_smer_normalized > 20) {
-                Q.new_middle_smer -= 6/12;
+            if (Q.new_middle_DSA_normalized > 20) {
+                Q.new_middle_DSA -= 6/12;
             }
-            if (Q.old_middle_smer_normalized > 20) {
-                Q.old_middle_smer -= 6/12;
+            if (Q.old_middle_DSA_normalized > 20) {
+                Q.old_middle_DSA -= 6/12;
             }
-            if (Q.rural_smer_normalized > 20) {
-                Q.rural_smer -= 6/12;
+            if (Q.rural_DSA_normalized > 20) {
+                Q.rural_DSA -= 6/12;
             }
-            if (Q.catholics_smer_normalized > 20) {
-                Q.catholics_smer -= 6/12;
+            if (Q.catholics_DSA_normalized > 20) {
+                Q.catholics_DSA -= 6/12;
             }
         }
     }

@@ -254,3 +254,23 @@
   };
 
 }());
+
+window.displayText = function(text) {
+    const colors = {
+        "dsa": "#ea232a",
+        "Democratic Party": "#0044c9",
+        "Progressive": "#2e1d64",
+        "Democratic Socialism": "#ea232a",
+        "Democratic Socialist": "#ea232a",
+        "Conservative": "#1d87ad",
+        "Trumpist": "#7e400b",
+        "Donald J. Trump": "#7e400b",
+    };
+
+    Object.keys(colors).forEach(function(key) {
+        const regex = new RegExp(key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
+        text = text.replace(regex, `<span style="color:${colors[key]}">$&</span>`);
+    });
+
+    return text;
+};
